@@ -11,10 +11,10 @@ module.exports = {
     production : {
       user : 'surya',
       host : '192.168.1.62',
-      ref  : 'origin/main',
-      repo : 'https://github.com/surya5602/Task.git',
-      path : '/var/www/deployment',
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production',
+      ref  : 'origin/master',
+      repo : 'git@github.com/surya5602/Task.git',
+      path : '/home/surya/Desktop/Nodeapp/devops/Task',
+      'post-deploy' : 'npm install && pm2 start index.js',
 
     }
   }
