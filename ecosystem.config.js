@@ -14,9 +14,8 @@ module.exports = {
       ref  : 'origin/main',
       repo : 'https://github.com/surya5602/Task',
       path : '/var/www/deployment',
-      'pre-deploy-local': '',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production',
-      'pre-setup': ''
+
     }
   }
 };
