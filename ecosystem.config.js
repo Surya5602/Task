@@ -12,7 +12,7 @@ module.exports = {
       user : 'surya',
       host : '192.168.1.62',
       ref  : 'origin/main',
-      repo : 'https://github.com/surya5602/Task',
+      repo : 'https://github.com/surya5602/Task.git',
       path : '/var/www/deployment',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production',
 
